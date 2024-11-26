@@ -1,38 +1,163 @@
-.App {
+/* Body */
+body {
+  align-items: center;
+  justify-content: center;
+  background-color: #76767a;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+.button-group .arrival-btn {
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+.button-group .arrival-btn:hover {
+  background-color: #218838;
+}
+.button-group .departure-btn {
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+.button-group .departure-btn:hover {
+  background-color: #c82333;
+}
+.button {
+  background-color: #556EE6;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Containers */
+.container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px 25px;
+  max-width: 1500px;
+  width: 100%;
+}
+
+/* Forms */
+form {
+  margin-top: 30px;
+}
+form div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+form input, form textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 97%;
+  font-size: 1em;
+  align-items: center;
+}
+form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+form label {
+  color: #555;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+/* Headings */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  text-align: center;
+}
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Records */
+.no-records {
+  color: #777;
+  margin-top: 20px;
+  font-size: 1.2em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Search Bar */
+.search-bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.search-bar input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  outline: none;
+  padding: 10px;
+  font-size: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+/* Tables */
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+table th {
+  background-color: #556EE6;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Timestamps */
+.timestamp {
+  color: #555;
+  font-size: 0.9em;
+  margin-top: 5px;
 }
